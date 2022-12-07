@@ -1,0 +1,17 @@
+home:
+  title: "TSB cheatsheet"
+  tagline: |
+    TSB cheatsheet, created by <a href='https://tetrate.io'>Tetrate</a> with ❤️
+
+sheet:
+  suffix: cheatsheet
+
+search_form:
+  default_placeholder: Search cheatsheets
+  home_placeholder: Search...
+  prefix: cheatsheets
+
+not_found:
+  title: Not found
+  description: Sorry, we don't have a cheatsheet for this yet. Try searching!
+  home: Back to home
