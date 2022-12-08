@@ -18,8 +18,6 @@ intro:
 
 The `config` command will setup a profile to interact with TSB
 
-The configuration data is stored locally in ` ~/.config/tetrate/tctl/tctl_config` file. It allows the configuration to be backed up, restored, copied or removed (reinitialized).
-
 Example
 ```bash
 # Configure Cluster
