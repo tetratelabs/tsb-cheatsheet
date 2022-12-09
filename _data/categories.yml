@@ -1,7 +1,6 @@
 enabled: true
 names:
-  - tctl
-  - Traffic Management
-  - Observability
-  - VMs
-  - Gateways
+  - CLI
+  - Resources
+  - Concepts
+  - Quickstart
