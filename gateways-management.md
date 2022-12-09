@@ -5,7 +5,7 @@ prism_languages: [bash,yaml]
 weight: -3
 tags: [Featured]
 updated: 2022-12-07
-category: Gateways
+category: Resources
 intro:
   Gateways Management
 ---
