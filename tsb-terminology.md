@@ -23,7 +23,7 @@ single place to manage your entire infrastructure. It maps to your existing
 organizational structure, and enables you to provision access rights according
 to your already established teams and needs.
 
-More details can be found in the [TSB Architecture](./architecture) page.
+More details can be found in the [TSB Architecture](https://docs.tetrate.io/service-bridge/latest/en-us/concepts/architecture) page.
 
 ### Organization
 In TSB, an organization is the name we give to the corporation that has a shared
@@ -46,7 +46,7 @@ independently authenticated.
 
 ### Group
 A logical grouping of resources under a Workspace. A group may be one
-of [gateway](../refs/tsb/gateway/v2/gateway_group/), [traffic](../refs/tsb/traffic/v2/traffic_group/), or [security](../refs/tsb/security/v2/security_group/) group.
+of [gateway](https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/gateway/v2/gateway_group/), [traffic](https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/traffic/v2/traffic_group/), or [security](https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/security/v2/security_group/) group.
 
 ### Application
 A logical grouping of Services that expose a set of APIs that can be consumed
@@ -65,10 +65,10 @@ applications and services without having to be exposed to the details of the und
 compute and networking technologies.
 
 ### User
-A user models an entity in TSB - both humans and a non-person entities. They can be grouped into [Teams](#team). Users can be assigned access to resources with [TSB's RBAC API](../refs/tsb/rbac/v2/yaml/) just like Teams. You can create and manage Users in TSB manually via the [Users and Teams API](../refs/tsb/v2/team/), but in most cases [TSB syncs Users and Teams from your source of truth](./security.mdx#user-access-policies) at a regular interval (configured during TSB installation).
+A user models an entity in TSB - both humans and a non-person entities. They can be grouped into [Teams](#team). Users can be assigned access to resources with [TSB's RBAC API](https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/rbac/v2/yaml/) just like Teams. You can create and manage Users in TSB manually via the [Users and Teams API](https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/v2/team/), but in most cases [TSB syncs Users and Teams from your source of truth](./security.mdx#user-access-policies) at a regular interval (configured during TSB installation).
 
 ### Team
-A team is a group of [Users](#user), and acts as a handle for assigning many users access to resources with [TSB's RBAC API](../refs/tsb/rbac/v2/policy_service). We recommend always assigning teams, never individuals, access in TSB as a security best practice. You can create and manage Teams in TSB manually via the [Users and Teams API](../refs/tsb/v2/team), but in most cases [TSB syncs Users and Teams from your source of truth](./security.mdx#user_management_access_policies) at a regular interval (configured during TSB installation).
+A team is a group of [Users](#user), and acts as a handle for assigning many users access to resources with [TSB's RBAC API](https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/rbac/v2/policy_service). We recommend always assigning teams, never individuals, access in TSB as a security best practice. You can create and manage Teams in TSB manually via the [Users and Teams API](https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/v2/team), but in most cases [TSB syncs Users and Teams from your source of truth](./security.mdx#user_management_access_policies) at a regular interval (configured during TSB installation).
 
 ## Architectural Components
 
