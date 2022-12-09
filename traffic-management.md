@@ -1,68 +1,82 @@
 ---
-title: Traffic Management
+title: Traffic Settings Management
 layout: 2017/sheet
 prism_languages: [bash,yaml]
 weight: -3
 tags: [Featured]
 updated: 2022-12-07
-category: Traffic Management
+category: Resources
 intro: 
   Traffic management in TSB.
 ---
 
 ## Intro
 
-### Resources
+- TrafficGroup
+  - [`ServiceRoute`](#serviceroute) Define versions of services with traffic shifting policies
+  - [`TrafficSetting`](#trafficsetting) Define behavior of proxy workloads
 
-- [`IngressGateway`](#ingressgateway) Workload to act as a gateway for traffic entering the mesh (north-south)
-
-## IngressGateway
+## ServiceRoute
 
 ### Sample
 
-#### sample/traffic-management/ingressgateway.yaml
+#### sample/traffic-management/serviceroute.yaml
+
 ```yaml
-apiVersion: gateway.tsb.tetrate.io/v2
-kind: IngressGateway
-metadata:
-  name: bookinfo-ingress
-  group: bookinfo-gatewaygroup
-  workspace: bookinfo-workspace
-  tenant: bookinfo
+apiVersion: traffic.tsb.tetrate.io/v2
+kind: ServiceRoute
+Metadata:
   organization: tsbdemo
+  tenant: bookinfo
+  workspace: bookinfo-workspace
+  group: bookinfo-trafficgroup
+  name: bookinfo-tg-reviews
 spec:
-  workloadSelector:
-    namespace: bookinfo
-    labels:
-      app: bookinfo-gateway
-  http:
-  - name: bookinfo-plaintext
-    port: 80
-    hostname: bookinfo.com
-    routing:
-      rules:
-      - redirect:
-          authority: bookinfo.com
-          port: 443
-          redirectCode: 301
-          scheme: https
-  - name: bookinfo-secure
-    port: 443
-    hostname: bookinfo.com
-    tls:
-      mode: SIMPLE
-      secretName: bookinfo-cert
-    routing:
-      rules:
-      - route:
-          host: ns1/productpage.ns1.svc.cluster.local
-          port: 9080
+  service: bookinfo/reviews.bookinfo.svc.cluster.local
+  stickySession:
+    useSourceIp: true
+  subsets:
+    - name: v1
+      labels:
+        version: v1
+      weight: 50
+    - name: v2
+      labels:
+        version: v2
+      weight: 50
+```
+### Fields
+
+Interpretations of fields in the sample
+- `service`: which service configuration will be applied
+- `stickySession`: how to keep traffic from client to a specific backend
+- `subsets`: a list of versions with traffic weights
+
+## TrafficSetting
+
+### Sample
+
+#### sample/traffic-management/trafficsetting.yaml
+
+```yaml
+apiVersion: traffic.tsb.tetrate.io/v2
+kind: TrafficSetting
+metadata:
+  organization: tsbdemo
+  tenant: bookinfo
+  workspace: bookinfo-workspace
+  group: bookinfo-trafficgroup
+  name: bookinfo-tg
+spec:
+  resilience:
+    httpRetries:
+      attempts: 3
+      perTryTimeout: 3s
+      retryOn: 5xx,gateway-error,reset
 ```
 
 ### Fields
 
 Interpretations of fields in the sample
-- `workloadSelector`: gateway with `app: bookinfo-gateway` label will be the edge proxy.
-- `http`: application type.
-- `routing`: rules for traffic flows.
-- `tls`: tls mode and location of certs if required.
+- `resillience`: traffic reliability knobs 
+- `httpRetries`: retry policy for all HTTP requests
