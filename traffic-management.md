@@ -7,14 +7,22 @@ tags: [Featured]
 updated: 2022-12-07
 category: Resources
 intro: 
-  Traffic management in TSB.
+  Traffic Settings Management in TSB.
 ---
 
 ## Intro
 
-- TrafficGroup
-  - [`ServiceRoute`](#serviceroute) Define versions of services with traffic shifting policies
-  - [`TrafficSetting`](#trafficsetting) Define behavior of proxy workloads
+### Resources
+
+- TrafficGroup allow grouping the proxy workloads in a set of namespaces owned by its parent workspace
+- [`ServiceRoute`](#serviceroute) Define versions of services with traffic shifting policies
+- [`TrafficSetting`](#trafficsetting) Define behavior of proxy workloads
+
+### tsb/traffic/v2
+- [`TrafficGroup`](https://docs.tetrate.io/service-bridge/1.5.x/en-us/refs/tsb/traffic/v2/traffic_group)
+- [`ServiceRoute`](https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/traffic/v2/service_route)
+- [`TrafficSetting`](https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/traffic/v2/traffic_setting)
+
 
 ## ServiceRoute
 

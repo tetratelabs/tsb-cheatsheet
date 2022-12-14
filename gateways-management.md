@@ -5,7 +5,7 @@ prism_languages: [bash,yaml]
 weight: -3
 tags: [Featured]
 updated: 2022-12-07
-category: Resources
+category: Gateways
 intro:
   Gateways Management
 ---
@@ -19,6 +19,14 @@ intro:
 - [`Install Tier1Gateway`](#install-tier1gateway) Define method to install Tier1Gateway on k8s/ocp
 - [`Configure Tier1Gateway`](#configure-ingressgateway) Defines way to configure workload to act as a gateway that distributes traffic across one or more ingress gateways
 
+### install.tetrate.io
+- [CRD: Install Gateways](https://docs.tetrate.io/service-bridge/latest/en-us/refs/install/dataplane/v1alpha1/spec)
+
+### tsb/gateway/v2
+- [GatewayGroup](https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/gateway/v2/gateway_group)
+- [IngressGateway](https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/gateway/v2/ingress_gateway)
+- [Tier1Gateway](https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/gateway/v2/tier1_gateway)
+- [EgressGateway](https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/gateway/v2/egress_gateway)
 
 ## Install IngressGateway
 

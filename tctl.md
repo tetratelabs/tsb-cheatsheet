@@ -12,7 +12,12 @@ intro:
 
 ## TCTL
 
-`tctl` binary available for Linux/MacOS/Windows - [Download tctl](https://binaries.dl.tetrate.io/public/raw/)
+### Quicklinks
+
+- [Getting Started](https://docs.tetrate.io/service-bridge/latest/en-us/reference/cli/guide/index)
+- [Download tctl](https://binaries.dl.tetrate.io/public/raw/)
+- [Reference](https://docs.tetrate.io/service-bridge/latest/en-us/reference/cli/reference)
+
 ## Setup
 
 ### config
