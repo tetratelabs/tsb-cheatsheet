@@ -12,6 +12,14 @@ intro:
 
 ## Intro
 
+### Resources
+- SecurityGroup allow grouping the proxy workloads in a set of namespaces owned by its parent workspace
+- [`SecuritySetting`](#securitysetting) allows configuring security related properties such as TLS authentication and access control for traffic arriving at a proxy workload in a security group
+
+### tsb/security/v2
+
+- [SecurityGroup](https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/security/v2/security_group)
+- [SecuritySetting](https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/security/v2/security_setting)
 
 ## SecuritySetting
 
