@@ -29,9 +29,9 @@ $base-head: #111;
 $base-text: #345;
 $base-mute: #556677; // gray
 
-$base-a: adjust-color(#8370bd, $lightness: -5%); // indigo
+$base-a: adjust-color(#F05623, $lightness: -5%); // orange
 $base-b: adjust-color(#2b72a2, $lightness: -5%); // blue
-$base-c: adjust-color(#17c694, $lightness: -5%); // teal
+$base-c: adjust-color(#000717, $lightness: -5%); // black
 
 $base-a3: adjust-color($base-a, $lightness: 16%, $hue: -20deg);
 $base-a7: adjust-color($base-a, $lightness: -16%, $hue: 20deg);

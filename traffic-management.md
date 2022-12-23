@@ -7,7 +7,7 @@ tags: [Featured]
 updated: 2022-12-07
 category: Resources
 intro: 
-  Traffic Settings Management in TSB.
+  <a href='https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/traffic/v2/yaml'>Traffic Settings Management</a> in TSB.
 ---
 
 ## Intro

@@ -7,7 +7,7 @@ tags: [Featured]
 updated: 2022-12-07
 category: Resources
 intro:
-  Security Settings Management
+  <a href='https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/security/v2/yaml'>Security Settings Management</a> in TSB.
 ---
 
 ## Intro
