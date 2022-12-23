@@ -5,11 +5,10 @@ prism_languages: [bash,yaml]
 weight: -3
 tags: [Featured]
 updated: 2022-12-07
-category: Gateways
+category: Resources
 intro:
-  Gateways Management
+  <a href='https://docs.tetrate.io/service-bridge/latest/en-us/refs/tsb/gateway/v2/yaml'>Gateways Settings Management</a>  in TSB.
 ---
-
 ## Intro
 
 ### Resources

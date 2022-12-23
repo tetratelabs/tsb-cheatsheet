@@ -42,13 +42,14 @@
       {% include 2017/pages-list-item.html page=page class='item top-sheet' %}
       {% endfor %}
 
-      <h2 class='category item' data-js-searchable-header>
+      <!-- <h2 class='category item' data-js-searchable-header>
         <span>Recently updated</span>
-      </h2>
+      </h2> -->
 
-      {% for page in recent_pages reversed %}
+      <!-- {% for page in recent_pages reversed %}
       {% if forloop.index <= 18 %} {% include 2017/pages-list-item.html page=page class='article item' %} {% endif %} {%
-        endfor %} {% for category in site.data.categories.names %} <h2 class='category item'
+        endfor %}  -->
+        {% for category in site.data.categories.names %} <h2 class='category item'
         id='{{ category | downcase | replace: " ", "-" }}' data-js-searchable-header>
         <span>{{ category }}</span>
         </h2>
@@ -62,6 +63,12 @@
         {% endfor %}
         {% endfor %}
 
+        <div class='message item missing-message'>
+          <h3>See something missing?</h3>
+          <p>
+            <a class='push-button' href='{{ site.github.repository_url }}/issues/new?title=Cheatsheet%20request:%20<Content%20Summary>'>Request cheatsheet</a>
+          </p>
+        </div>        
     </div>
   </div>
 
