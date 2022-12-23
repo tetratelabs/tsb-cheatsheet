@@ -1,7 +1,7 @@
 home:
   title: "TSB cheatsheet"
   tagline: |
-    <a href='https://docs.tetrate.io/service-bridge'>TSB Docs Cheatsheet</a>, created by <a href='https://tetrate.io'>Tetrate</a> with ❤️
+    TSB Cheatsheet - Referenced from <a href='https://docs.tetrate.io/service-bridge'>docs.tetrate.io</a> with ❤️
 
 sheet:
   suffix: cheatsheet
