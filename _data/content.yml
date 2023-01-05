@@ -15,3 +15,14 @@ not_found:
   title: Not found
   description: Sorry, we don't have a cheatsheet for this yet. Try searching!
   home: Back to home
+
+related_posts_callout:
+  description: Over SIZE curated cheatsheets, by Tetrate for developers.
+  link: All cheatsheets
+
+related_posts_group:
+  top: Top cheatsheets
+  other: Other cheatsheets
+  category: Other CATEGORY cheatsheets
+
+
