@@ -49,7 +49,7 @@ defaults:
       prism_languages: []
 
 # Site info
-url: https://tsb-cheatsheet.tetrate.io
+url: https://docs.tetrate.io
 title: TSB Cheatsheet
 
 repository: tetratelabs/tsb-cheatsheet

@@ -1,4 +1,4 @@
-{% assign slug = include.page.url | remove: '.html' | remove_first: '/' %}
+{% assign slug = include.page.url | remove: '.html' | remove_first: '/' | remove_first: 'service-bridge/cheatsheet/' %}
 <a class='{{ include.class }} -item-{{ slug }}'
   href="{{base}}{{ include.page.url | remove: '.html' }}"
   data-js-searchable-item='{"slug":"{{ slug }}","category":"{{ include.page.category }}"}'>

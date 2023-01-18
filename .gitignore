@@ -2,3 +2,14 @@
 _site
 node_modules
 .cache
+
+# Yarn v2+ directories.
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+assets
