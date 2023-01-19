@@ -46,7 +46,4 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Push artifacts
-        run:
-          go run \
-            oras.land/oras/cmd/oras@v0.16.0 \
-            docker.io/tetrate/tsb-cheatsheet:${{ github.sha }} _site:application/vnd.io.tetrate.docs.layer.v1+tar
+        run: go run oras.land/oras/cmd/oras@v0.16.0 docker.io/tetrate/tsb-cheatsheet:${{ github.sha }} _site:application/vnd.io.tetrate.docs.layer.v1+tar
