@@ -725,7 +725,7 @@ html.WithJs.LoadDone .intro-content {
 }
 .MarkdownBody .line-highlight {
   transform: translate3d(0, 2px, 0);
-  background: linear-gradient(to right, rgba(20, 175, 131, 0.05) 25%, transparent);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.05) 25%, transparent);
 }
 .MarkdownBody .line-highlight[data-end] {
   margin-top: 0;
@@ -752,7 +752,7 @@ html.WithJs.LoadDone .intro-content {
   color: #1d406e;
 }
 .token.value, .token.string, .token.number, .token.attr-value, .token.boolean, .token.regex {
-  color: #14af83;
+  color: black;
 }
 .token.function, .token.attr-name {
   color: #2e90ae;
@@ -807,7 +807,7 @@ html.WithJs.LoadDone .intro-content {
   }
 }
 .MarkdownBody h2:target {
-  color: #745fb5;
+  color: #ea4610;
 }
 
 .MarkdownBody h3 {
@@ -817,7 +817,7 @@ html.WithJs.LoadDone .intro-content {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 17.1925px;
   font-weight: 400;
-  color: #745fb5;
+  color: #ea4610;
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .MarkdownBody h3 {
@@ -864,12 +864,12 @@ html.WithJs.LoadDone .intro-content {
   opacity: 0.5;
 }
 .MarkdownBody .local-anchor:target, .MarkdownBody :target > .local-anchor {
-  color: #745fb5;
+  color: #ea4610;
   opacity: 1;
 }
 .MarkdownBody .local-anchor:hover, .MarkdownBody .local-anchor:focus {
   color: white;
-  background: #745fb5;
+  background: #ea4610;
   opacity: 1;
   text-decoration: inherit;
 }
@@ -884,14 +884,14 @@ html.WithJs.LoadDone .intro-content {
 .MarkdownBody.MarkdownBody p.-crosslink > a {
   display: block;
   text-decoration: none;
-  color: #745fb5;
+  color: #ea4610;
   border-bottom: 0;
   box-shadow: none;
   margin: -16px;
   padding: 16px;
 }
 .MarkdownBody.MarkdownBody p.-crosslink > a:visited {
-  color: #745fb5;
+  color: #ea4610;
 }
 .MarkdownBody.MarkdownBody p.-crosslink > a::before {
   content: "";
@@ -907,14 +907,14 @@ html.WithJs.LoadDone .intro-content {
   border-radius: 50%;
 }
 .MarkdownBody.MarkdownBody p.-crosslink > a::before, .MarkdownBody.MarkdownBody p.-crosslink > a:visited::before {
-  background-color: #745fb5;
+  background-color: #ea4610;
   color: white;
 }
 .MarkdownBody.MarkdownBody p.-crosslink > a:hover, .MarkdownBody.MarkdownBody p.-crosslink > a:focus {
-  color: #673d85;
+  color: #9d600b;
 }
 .MarkdownBody.MarkdownBody p.-crosslink > a:hover::before, .MarkdownBody.MarkdownBody p.-crosslink > a:focus::before {
-  background-color: #673d85;
+  background-color: #9d600b;
 }
 
 /*
@@ -978,7 +978,7 @@ html.WithJs.LoadDone .intro-content {
 }
 .MarkdownBody table thead th {
   font-weight: normal;
-  color: #745fb5;
+  color: #ea4610;
 }
 
 .MarkdownBody table.-shortcuts td:first-child > code {
@@ -1156,7 +1156,7 @@ html.WithJs.LoadDone .intro-content {
 }
 .back-button:hover, .back-button:focus {
   color: white;
-  background: #745fb5;
+  background: #ea4610;
   opacity: 1;
 }
 .back-button::before {
@@ -1256,7 +1256,7 @@ html.WithJs.LoadDone .intro-content {
   vertical-align: middle;
   width: 100%;
   height: 1px;
-  background: linear-gradient(to right, rgba(116, 95, 181, 0.2), transparent 80%);
+  background: linear-gradient(to right, rgba(234, 70, 16, 0.2), transparent 80%);
 }
 
 /*
@@ -1467,7 +1467,7 @@ ul.-also-see.-also-see.-also-see > li > em {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22rgb(150%2C155%2C207)%22%20d%3D%22M85%20277.375h259.704L225.002%20397.077%20256%20427l171-171L256%2085l-29.922%2029.924%20118.626%20119.7H85v42.75z%22%2F%3E%3C%2Fsvg%3E") center center/24px 24px no-repeat;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22rgb(244%2C88%2C101)%22%20d%3D%22M85%20277.375h259.704L225.002%20397.077%20256%20427l171-171L256%2085l-29.922%2029.924%20118.626%20119.7H85v42.75z%22%2F%3E%3C%2Fsvg%3E") center center/24px 24px no-repeat;
   height: 24px;
   width: 24px;
   position: absolute;
@@ -1478,7 +1478,7 @@ ul.-also-see.-also-see.-also-see > li > em {
 .h3-section.-intro > .body > ul > li:hover > a::before {
   display: inline-block;
   vertical-align: middle;
-  background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22rgb(116%2C95%2C181)%22%20d%3D%22M85%20277.375h259.704L225.002%20397.077%20256%20427l171-171L256%2085l-29.922%2029.924%20118.626%20119.7H85v42.75z%22%2F%3E%3C%2Fsvg%3E") center center/24px 24px no-repeat;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22rgb(234%2C70%2C16)%22%20d%3D%22M85%20277.375h259.704L225.002%20397.077%20256%20427l171-171L256%2085l-29.922%2029.924%20118.626%20119.7H85v42.75z%22%2F%3E%3C%2Fsvg%3E") center center/24px 24px no-repeat;
   height: 24px;
   width: 24px;
 }
@@ -1841,10 +1841,10 @@ ul.-also-see.-also-see.-also-see > li > em {
   text-decoration: none;
 }
 .page-actions > li > a:hover, .page-actions > li > a:focus {
-  color: #745fb5;
+  color: #ea4610;
 }
 .page-actions > li > a:hover > .text, .page-actions > li > a:focus > .text {
-  color: #745fb5;
+  color: #ea4610;
 }
 .page-actions > li > a > .text {
   font-size: 11.3043478261px;
@@ -1920,7 +1920,7 @@ ul.-also-see.-also-see.-also-see > li > em {
   top: -1px;
 }
 .page-actions > .link.-button > a:hover, .page-actions > .link.-button > a:focus {
-  background: linear-gradient(5deg, #745fb5, #9066b8);
+  background: linear-gradient(5deg, #ea4610, #ef8515);
   box-shadow: 0 1px 1px rgba(85, 102, 119, 0.55);
 }
 .page-actions > .link.-button > a:hover, .page-actions > .link.-button > a:hover > .text, .page-actions > .link.-button > a:focus, .page-actions > .link.-button > a:focus > .text {
@@ -2017,7 +2017,7 @@ ul.-also-see.-also-see.-also-see > li > em {
   color: #345;
 }
 .top-nav > .container > .brand:hover {
-  color: #745fb5;
+  color: #ea4610;
 }
 @media (max-width: 480px) {
   .top-nav > .container > .brand {

@@ -703,7 +703,7 @@ html.WithJs.LoadDone .intro-content {
 .announcements-item > .title {
   font-size: 14.95px;
   font-weight: normal;
-  color: #745fb5;
+  color: #ea4610;
   margin: 0;
   padding: 0;
 }
@@ -744,7 +744,7 @@ html.WithJs.LoadDone .intro-content {
   background: transparent;
 }
 .announcements-item > .close:hover, .announcements-item > .close:focus {
-  color: #745fb5;
+  color: #ea4610;
 }
 .announcements-item > .close::before {
   content: "\00D7";
@@ -805,7 +805,7 @@ html.WithJs.LoadDone .intro-content {
 }
 .back-button:hover, .back-button:focus {
   color: white;
-  background: #745fb5;
+  background: #ea4610;
   opacity: 1;
 }
 .back-button::before {
@@ -1008,10 +1008,10 @@ html.WithJs.LoadDone .intro-content {
   text-decoration: none;
 }
 .page-actions > li > a:hover, .page-actions > li > a:focus {
-  color: #745fb5;
+  color: #ea4610;
 }
 .page-actions > li > a:hover > .text, .page-actions > li > a:focus > .text {
-  color: #745fb5;
+  color: #ea4610;
 }
 .page-actions > li > a > .text {
   font-size: 11.3043478261px;
@@ -1087,7 +1087,7 @@ html.WithJs.LoadDone .intro-content {
   top: -1px;
 }
 .page-actions > .link.-button > a:hover, .page-actions > .link.-button > a:focus {
-  background: linear-gradient(5deg, #745fb5, #9066b8);
+  background: linear-gradient(5deg, #ea4610, #ef8515);
   box-shadow: 0 1px 1px rgba(85, 102, 119, 0.55);
 }
 .page-actions > .link.-button > a:hover, .page-actions > .link.-button > a:hover > .text, .page-actions > .link.-button > a:focus, .page-actions > .link.-button > a:focus > .text {
@@ -1153,7 +1153,7 @@ html.WithJs.LoadDone .intro-content {
 }
 .pages-list > .article:hover > .info > .title, .pages-list > .article:focus > .info > .title {
   opacity: 1;
-  color: #745fb5;
+  color: #ea4610;
 }
 
 .pages-list > .category {
@@ -1162,7 +1162,7 @@ html.WithJs.LoadDone .intro-content {
   margin: 16px 0;
   padding: 0 0 16px 0;
   font-weight: normal;
-  color: #745fb5;
+  color: #ea4610;
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .pages-list > .category {
@@ -1461,7 +1461,7 @@ html.WithJs.LoadDone .intro-content {
   color: #345;
 }
 .top-nav > .container > .brand:hover {
-  color: #745fb5;
+  color: #ea4610;
 }
 @media (max-width: 480px) {
   .top-nav > .container > .brand {
@@ -1508,7 +1508,7 @@ html.WithJs.LoadDone .intro-content {
 }
 .top-sheet.top-sheet > .info {
   display: block;
-  background: #745fb5;
+  background: #ea4610;
   color: white;
   text-align: left;
   padding: 16px;
@@ -1522,10 +1522,10 @@ html.WithJs.LoadDone .intro-content {
   box-shadow: 0 6px 8px rgba(85, 102, 119, 0.03), 0 1px 1px rgba(85, 102, 119, 0.4);
 }
 .top-sheet.top-sheet:nth-of-type(3n + 1) > .info {
-  background: linear-gradient(15deg, #745fb5, #9a6dbb);
+  background: linear-gradient(15deg, #ea4610, #f0981e);
 }
 .top-sheet.top-sheet:nth-of-type(3n + 1):hover > .info, .top-sheet.top-sheet:nth-of-type(3n + 1):focus > .info {
-  background: #5f4aa1;
+  background: #c33b0d;
 }
 .top-sheet.top-sheet:nth-of-type(3n + 2) > .info {
   background: linear-gradient(15deg, #556677, #5e7683);
@@ -1534,10 +1534,10 @@ html.WithJs.LoadDone .intro-content {
   background: #44525f;
 }
 .top-sheet.top-sheet:nth-of-type(3n + 3) > .info {
-  background: linear-gradient(15deg, #14af83, #15b89a);
+  background: linear-gradient(15deg, black, #00020a);
 }
 .top-sheet.top-sheet:nth-of-type(3n + 3):hover > .info, .top-sheet.top-sheet:nth-of-type(3n + 3):focus > .info {
-  background: #108b68;
+  background: black;
 }
 .top-sheet.top-sheet > .info > .title {
   display: none;
